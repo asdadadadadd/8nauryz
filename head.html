@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>8 Наурыз</title>
+  <style>
+    body {
+      margin: 0; 
+      height: 100vh; 
+      background-color: #f0f0f0; 
+      overflow: hidden;
+      background-image: url(photo/фонн.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+    
+
+    .flower {
+      width: 120px;
+      height: 120px;
+      background-image: url('photo/фотоо.png'); 
+      background-size: cover;
+      opacity: 0; 
+      transform: scale(0); 
+      animation: openFlower 3s ease forwards;
+      position: fixed; 
+    }
+
+    
+    .flower-1 {
+      top: 20px;
+      left: 20px;
+      animation-delay: 0s; 
+    }
+
+    
+    .flower-2 {
+      top: 20px;
+      right: 20px;
+      animation-delay: 0s; 
+    }
+
+   
+    .flower-3 {
+      bottom: 20px;
+      left: 20px;
+      animation-delay: 0s; 
+    }
+
+    
+    .flower-4 {
+      bottom: 20px;
+      right: 20px;
+      animation-delay: 0s; 
+    }
+
+    @keyframes openFlower {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    h3 {
+        text-align: center;
+    }
+    #aidana {
+       color: rgb(255, 13, 0);
+       font-size: 25px;
+    }
+    h1 {
+        text-align: center;
+    }
+   
+  </style>
+</head>
+<body>
+    <script>
+        window.onload = function () {
+          let music = document.getElementById("music");
+          music.muted = true; 
+          music.play(); // 
+          setTimeout(() => {
+            music.muted = false; 
+          }, 1000);
+        }
+      </script>
+<div class="flower flower-1"></div>
+<div class="flower flower-2"></div>
+<div class="flower flower-3"></div>
+<div class="flower flower-4"></div>
+<br>
+<br>
+<h1>     🌸 8 Наурыз 🌸    </h1>
+<h3 id="aidana"><b>Қымбатты Айдана Алматқызы </b></h3>
+<br>
+<h3> Сізді мерекеңізбен шын жүректен құттықтаймын!</h3>
+<br>
+<h3>Сіздің даналығыңыз бен мейірімділігіңіз әрқашан жүрегімізді жылытады, </h3>
+<br>
+<h3>өмірге деген үміт пен шабыт сыйлайды.</h3>
+<br>
+<h3>Сіздің еңбегіңіз бен шын ықыласыңыз біз үшін үлгі,</h3>
+<br>
+<h3>және сіздің арқаңызда өскен әрбір оқушыңыз болашаққа сенімді қадам басуда.</h3>
+<br>
+<h3> Сізге зор денсаулық, шығармашылық шабыт және шексіз табыс тілеймін!</h3>
+<br>
+<h3>Әр күніңіз қуаныш пен жаңа білімге толы болсын!❤💐</h3>
+<audio  id="music" src="music/music.mp3" autoplay loop></audio>
+
+</body>
+</html>
